@@ -1,0 +1,113 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{葛扬涛}
+
+% {E-mail}{mobilephone}{homepage}
+% be careful of _ in emaill address
+\contactInfo{(+86) 181-6211-6559}{geyangtao518@outlook.com}{GitHub: @YangtaoGe518}
+% {E-mail}{mobilephone}
+% keep the last empty braces!
+%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+ 
+% \section{个人总结}
+% 本人在校成绩优秀、乐观向上，工作负责、自我驱动力强、热爱尝试新事物，认同开放、连接、共享的Web在未来的不可替代性。在校期间长期从事可视分析(Web的2D/3D时空可视化)相关研究，对Web技术发展趋势及前端工程化解决方案有浓厚兴趣。\textbf{现任职于阿里巴巴集团。}
+
+% \section{\faGraduationCap\ 教育背景}
+\section{教育背景}
+\datedsubsection{\textbf{伦敦大学学院(UCL)}}{2021.9 - 至今}
+\ 计算机科学,\textit{工程学硕士}(MEng)；\textbf{预期一等学位},
+\datedsubsection{\textbf{伦敦大学学院(UCL)},}{2018.9 - 2021.6}
+\ 计算机科学,\textit{理科学士}(BSc)；\textbf{一等学位，排名 前10\%}
+
+% \section{\faCogs\ IT 技能}
+\section{技术能力}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.2ex]
+  \item \textbf{后端开发}: 熟悉使用Java结合Spring Boot 实现RESTful 接口开发，使用过基于Java的Netty接口协议实现游戏服务器开发；熟悉使用基于Node.js的Express实现后端接口开发，并能设置合理的单元测试
+  \item \textbf{移动端开发}: 熟悉使用React Native 与Redux开发中小型手机App并实现安卓与IOS双平台发布
+  \item \textbf{前端开发}: 熟悉使用React 与Typescript 开发H5应用以及网页
+  \item \textbf{云服务}: 熟悉使用Amazon AWS 设计小型全栈架构，包含SQL数据库与前后端部署；使用过两大主流云框架AWS 和 Azure实现Pipeline部署
+  \item \textbf{C/C++}: 能使用C/C++实现基本的UNIX Shell，并实现一些基础的Linux 命令 
+  \item \textbf{其他语言}: Python，Haskell，Shell，C\#, \LaTeX
+\end{itemize}
+
+% \end{itemize}
+
+\section{工作/实习经历}
+\datedsubsection{\textbf{Ophidia Technologies} \textit{全栈开发工程师}| Full Stack Developer}{英国\&布鲁塞尔, 2021.5 - 至今}
+\begin{itemize}
+  \item 担任创业团队技术顾问，全栈开发工程师并带领3人的软件团队为葛兰素史克（GSK）技术验证并开发电子标签系统，该项目预期完成于2021年12月
+  \item 使用Express.js 实现RESTful接口实现数据接口以及接口加密，并使用Docker打包部署
+  \item 使用React.js 开发网页应用并连接后端API
+\end{itemize}
+
+\datedsubsection{\textbf{R3} \textit{方案开发工程师}| Solution Engineer}{英国, 2021.6 - 2021.9}
+\begin{itemize}
+  \item 使用Conclave SDK 与 Intel SGX 开发机密运算(Confidential Computing)应用
+  \item 将该应用结合于Corda Network，并为客户开发演示应用来验证其安全性
+  \item 抽象该应用为一个通用框架使其适用于其他应用场景，例如商业银行与保险公司
+\end{itemize}
+
+\datedsubsection{\textbf{Healios} \textit{移动开发工程师}| React Native Developer} {英国, 2020.12 - 2021.6}
+\begin{itemize}
+  \item 使用 React Native 与Redux 开发儿童心理治疗应用，该应用被收录在英国国民保健系统(NHS) 应用库中，并被加入电子处方药序列
+  \item 负责开发机器人对话框架，实现单选项，多选项和输入等多种交互方式并连接了内部机器学习框架API
+  \item 设计并实现了国际化框架，支持了英语，法语和西班牙语的显示，该框架允许直接修改配置文件增加新的语言种类
+\end{itemize}
+
+\datedsubsection{\textbf{EMIS Health Group},\textit{后端开发工程师}| Node.js Developer }{英国, 2020.6 - 2021.9}
+\begin{itemize}
+  \item 使用Node.js开发公司内部中间件实现自动生成不同服务组件间的多对多映射，并成功的发布在内部组件库中
+  \item 该中间件使用了Jest测试框架进行单元测试，并保证了97\%以上的测试覆盖率
+  \item 使用AWS部署该服务，其中使用AWS CloudFormation 实现了DevOp自动化部署，使用DynamoDB实现NoSQL数据库和使用AWS IAM策略实现资源控制
+\end{itemize}
+
+% \begin{onehalfspacing}
+% \end{onehalfspacing}
+
+% \datedsubsection{\textbf{DID-ACTE} 荷兰莱顿}{2015年3月 - 2015年6月}
+% \role{本科毕业设计}{LIACS 交换生}
+% 利用结巴分词对中国古文进行分词与词性标注，用已有领域知识训练形成 classifier 并对结果进行调优
+% \begin{onehalfspacing}
+% \begin{itemize}
+%   \item 利用结巴分词对中国古文进行分词与词性标注
+%   \item 利用已有领域知识训练形成 classifier, 并用分词结果进行测试反馈
+%   \item 尝试不同规则，对 classifier 进行调优
+% \end{itemize}
+% \end{onehalfspacing}
+
+\section{竞赛获奖/项目作品}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.2ex]
+  \item 美国运通挑战2020(AMEX Challenge 2020)编程马拉松竞赛\textbf{最佳商业应用奖}，代码可获取于\href{https://github.com/HackADream/AMEX-shop-small}{Github}
+  \item AI for the Common Good 编程马拉松竞赛\textbf{第三名，最佳想法奖}，代码可获取于\href{https://github.com/ROJHackathon/X5-FAIR-EzTalk}{Github}
+  \item Blockchain Demo: 一个区块链算法的Javascript实现，其中包含加密货币算法和智能合约算法，代码可获取于\href{https://github.com/YangtaoGe518/Blockchain-Demo}{Github}
+  \item React Native Chat: 一个基础的react native 聊天软件框架，并设计了前端持久化方案，代码可获取于\href{https://github.com/YangtaoGe518/react-native-chat}{Github}
+  \item NettyCommunication: 一个Netty协议的Java框架，其中包含TCP连接，以及登录和聊天两个简单的应用，代码可获取于\href{https://github.com/YangtaoGe518/NettyCommunication}{Github}
+\end{itemize}
+
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
